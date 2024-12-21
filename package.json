@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predelpoy": "npm run build",
-    "deploy": "gh-pages -d dist -r https://github.com/rmc-cf/rmc.git -b rmc-page"
+    "deploy": "gh-pages -d dist -r https://github.com/rmc-cf/rmc.git -b rmc-page",
+    "db":"npx json-server --watch db.json"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.1",

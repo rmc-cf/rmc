@@ -1,12 +1,17 @@
 
 import './App.css'
-import { Button } from './components/ui/button'
+import Header from './components/custom/Header'
+import Home from './views/Home'
 
 function App() {
 
   return (
     <>
-      <Button>123123</Button>
+    <Header/>
+    <div className='container p-10 '>
+
+    <Home/>
+    </div>
     </>
   )
 }
