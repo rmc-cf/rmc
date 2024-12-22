@@ -14,7 +14,8 @@ const Header = () => {
     //     fetchData()
     // },[])
     return (
-        <div className="flex justify-between items-center shadow px-10">
+        
+        <div className=" sticky left-0 top-0 bg-white flex justify-between items-center shadow px-10">
             <div className='flex items-center gap-8 '>
                     <img src='./logo.svg' className="logo" alt="Logo" />
               <MenuList/>

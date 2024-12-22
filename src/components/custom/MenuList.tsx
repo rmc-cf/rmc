@@ -1,7 +1,8 @@
 import api from "@/http"
 import { useEffect, useState } from "react"
-import { Route } from "wouter"
+import { Link } from "wouter"
 interface IMenu {
+    id:string
     name:string
     url:string
 }
@@ -17,7 +18,7 @@ const MenuList = () => {
   return (
     <div className='flex gap-6 items-center p-4'>
     {menuList.map(menu=>(
-        <Route path={menu.url}>{menu.name}</Route>
+        <Link href={menu.url} key={menu.id}>{menu.name}</Link>
     ))}
 </div>
   )
