@@ -1,7 +1,12 @@
+import NewsLayout from "@/layouts/NewsLayout"
 
 const News = () => {
   return (
-    <div>News</div>
+    <>
+            <NewsLayout>
+123123
+            </NewsLayout>
+    </>
   )
 }
 

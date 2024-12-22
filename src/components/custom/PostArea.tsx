@@ -3,22 +3,9 @@ import Line from "./Line"
 import Comment from "./Comment"
 import PostList from "./PostList"
 import api from "@/http"
-export interface IPost {
-    user_id:string
-    content: string
+import { IPost } from "@/types/post"
+import { splitArray } from "@/lib/utils"
 
-    // Add other properties you expect in the response
-}
-function splitArray<T>(arr: T[], chunkSize: number): T[][] {
-    return arr.reduce((result: T[][], item: T, index: number) => {
-        const chunkIndex = Math.floor(index / chunkSize);
-        if (!result[chunkIndex]) {
-            result[chunkIndex] = []; // 创建新的子数组
-        }
-        result[chunkIndex].push(item);
-        return result;
-    }, []);
-}
 const PostArea = () => {
     //默认分列数
     const maxNum = 14

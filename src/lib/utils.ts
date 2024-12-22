@@ -11,3 +11,14 @@ export function getUrl(url: string) {
   const normalizedUrl = url.replace(/^\//, ''); // 去除 url 开头的斜杠
   return `${normalizedBaseUrl}/${normalizedUrl}`;
 }
+
+export function splitArray<T>(arr: T[], chunkSize: number): T[][] {
+    return arr.reduce((result: T[][], item: T, index: number) => {
+        const chunkIndex = Math.floor(index / chunkSize);
+        if (!result[chunkIndex]) {
+            result[chunkIndex] = []; // 创建新的子数组
+        }
+        result[chunkIndex].push(item);
+        return result;
+    }, []);
+}
