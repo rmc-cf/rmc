@@ -1,7 +1,7 @@
 
 import './App.css'
 
-import { Link, Route, Switch } from "wouter";
+import {  Route  } from "wouter";
 import Home from './views/Home';
 import Login from './views/Login';
 import Register from './views/Register';

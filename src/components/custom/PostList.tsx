@@ -1,5 +1,3 @@
-import api from "@/http"
-import { useEffect, useState } from "react"
 import { twMerge } from "tailwind-merge"
 import { IPost } from "./PostArea"
 

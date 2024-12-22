@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <div className="flex justify-between items-center shadow px-10">
             <div className='flex items-center gap-8 '>
-                    <img src={getUrl('logo.svg')} className="logo" alt="Logo" />
+                    <img src='./logo.svg' className="logo" alt="Logo" />
                 <div className='flex gap-6 items-center p-4'>
                     <div>咨询</div>
                     <div>软件</div>
