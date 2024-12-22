@@ -1,5 +1,6 @@
 import { getUrl } from "@/lib/utils";
 import { Link } from "wouter";
+import MenuList from "./MenuList";
 
 const Header = () => {
     // const [data,setData] = useState<SettingData | null>(null)
@@ -16,14 +17,7 @@ const Header = () => {
         <div className="flex justify-between items-center shadow px-10">
             <div className='flex items-center gap-8 '>
                     <img src='./logo.svg' className="logo" alt="Logo" />
-                <div className='flex gap-6 items-center p-4'>
-                    <div>咨询</div>
-                    <div>软件</div>
-                    <div>博客</div>
-                    <div>专区</div>
-                    <div>问答</div>
-                    <div>活动</div>
-                </div>
+              <MenuList/>
             </div>
             <div className='hidden md:flex items-center gap-4'>
                 <div className="flex border rounded-xl  items-center p-4 h-8">
