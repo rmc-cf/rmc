@@ -1,17 +1,18 @@
 
 import './App.css'
-import Header from './components/custom/Header'
-import Home from './views/Home'
 
+import { Link, Route, Switch } from "wouter";
+import Home from './views/Home';
+import Login from './views/Login';
+import Register from './views/Register';
+import { getUrl } from './lib/utils';
 function App() {
 
   return (
     <>
-    <Header/>
-    <div className='container p-10 '>
-
-    <Home/>
-    </div>
+    <Route path={getUrl('')}><Home/></Route>
+    <Route path={getUrl('login')}><Login/></Route>
+    <Route path={getUrl('register')}><Register/></Route>
     </>
   )
 }
